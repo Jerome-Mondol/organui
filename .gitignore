@@ -35,7 +35,6 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
 !.env.example
 
 # vercel
@@ -57,3 +56,4 @@ test-results/
 # agent worktrees and local settings
 .claude/worktrees/
 .claude/settings.local.json
+config.bat

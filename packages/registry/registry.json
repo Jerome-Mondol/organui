@@ -1316,7 +1316,10 @@
           "type": "registry:block"
         }
       ],
-      "docs": "Admissions area chart: https://organui.com/charts/area#chart-area-admissions"
+      "meta": {
+        "deprecated": true
+      },
+      "docs": "Admissions area chart: https://organui.com/charts/area#chart-area-admissions. Deprecated: removed in the next major release; chart-area-ed-arrivals shows daily arrivals."
     },
     {
       "name": "chart-area-census",
@@ -1415,7 +1418,10 @@
           "type": "registry:block"
         }
       ],
-      "docs": "Appointments bar chart: https://organui.com/charts/bar#chart-bar-appointments"
+      "meta": {
+        "deprecated": true
+      },
+      "docs": "Appointments bar chart: https://organui.com/charts/bar#chart-bar-appointments. Deprecated: removed in the next major release."
     },
     {
       "name": "chart-bar-diagnoses",
@@ -1447,7 +1453,10 @@
           "type": "registry:block"
         }
       ],
-      "docs": "ED visits bar chart: https://organui.com/charts/bar#chart-bar-ed-visits"
+      "meta": {
+        "deprecated": true
+      },
+      "docs": "ED visits bar chart: https://organui.com/charts/bar#chart-bar-ed-visits. Deprecated: removed in the next major release; chart-area-ed-arrivals shows daily arrivals."
     },
     {
       "name": "chart-bar-vaccinations",
@@ -1658,7 +1667,10 @@
           "type": "registry:block"
         }
       ],
-      "docs": "Blood donations pie chart: https://organui.com/charts/pie#chart-pie-blood-types"
+      "meta": {
+        "deprecated": true
+      },
+      "docs": "Blood donations pie chart: https://organui.com/charts/pie#chart-pie-blood-types. Deprecated: removed in the next major release."
     },
     {
       "name": "chart-pie-occupancy",
@@ -1675,6 +1687,22 @@
         }
       ],
       "docs": "Bed occupancy pie chart: https://organui.com/charts/pie#chart-pie-occupancy"
+    },
+    {
+      "name": "chart-pie-pdc",
+      "type": "registry:block",
+      "title": "Medication adherence pie chart",
+      "description": "Proportion of days covered by a medication over a year, with the 80% adherence threshold.",
+      "categories": ["charts", "charts-pie"],
+      "dependencies": ["recharts@^3.8.0"],
+      "registryDependencies": ["card", "badge", "chart"],
+      "files": [
+        {
+          "path": "registry/base-nova/charts/chart-pie-pdc.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "docs": "Medication adherence pie chart: https://organui.com/charts/pie#chart-pie-pdc"
     },
     {
       "name": "chart-radar-outcomes",
@@ -1723,6 +1751,22 @@
         }
       ],
       "docs": "Symptoms radar chart: https://organui.com/charts/radar#chart-radar-symptoms"
+    },
+    {
+      "name": "chart-radar-news2",
+      "type": "registry:block",
+      "title": "NEWS2 radar chart",
+      "description": "A NEWS2 early warning score, scored from raw observations, as a radar of each parameter's points.",
+      "categories": ["charts", "charts-radar"],
+      "dependencies": ["recharts@^3.8.0"],
+      "registryDependencies": ["card", "badge", "chart"],
+      "files": [
+        {
+          "path": "registry/base-nova/charts/chart-radar-news2.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "docs": "NEWS2 radar chart: https://organui.com/charts/radar#chart-radar-news2"
     },
     {
       "name": "chart-radial-coverage",

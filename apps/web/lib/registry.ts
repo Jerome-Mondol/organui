@@ -211,6 +211,9 @@ export const chartItems = catalog.items
       .replace("charts-", "") as ChartType,
     // Interactive charts span the grid, as on shadcn/ui.
     fullWidth: Boolean("meta" in item && item.meta?.fullWidth),
+    // Kept for projects that installed it, and removed in the next major
+    // release.
+    deprecated: Boolean("meta" in item && item.meta?.deprecated),
     install: install(item),
   }))
 
@@ -252,6 +255,12 @@ export const guides: (NavLink & { description: string })[] = [
     href: "/docs/forms",
     description:
       "Use the clinical inputs in forms with React Hook Form, Zod and shadcn's Field.",
+  },
+  {
+    title: "Clinical charts",
+    href: "/docs/clinical-charts",
+    description:
+      "The conventions the charts follow, so health data reads the way clinicians expect.",
   },
   {
     title: "Licences",
@@ -330,6 +339,7 @@ export const mainNav: NavLink[] = [
 export const pagesNew: string[] = [
   "/docs/base-ui",
   "/docs/forms",
+  "/docs/clinical-charts",
   aiIndex.href,
   helpersIndex.href,
   utilitiesIndex.href,
