@@ -81,7 +81,7 @@
     "./vestibular": "./registry/base-nova/vestibular/vestibular.tsx"
   },
   "scripts": {
-    "build": "bun scripts/build.ts",
+    "build": "node api.js && bun scripts/build.ts",
     "lint": "eslint registry --max-warnings=0",
     "utilities-css": "bun scripts/write-utilities-css.ts",
     "component-api": "bun scripts/write-component-api.ts",
