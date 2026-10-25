@@ -3,8 +3,8 @@
   "version": "0.5.0",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "node api.js && turbo build",
+    "dev": "node api.js && turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write .",
     "typecheck": "turbo typecheck",

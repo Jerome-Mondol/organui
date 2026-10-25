@@ -10,6 +10,7 @@ edge. Bands may overshoot; they are clipped to their part.
   python3 scripts/dermatome-map.py registry/base-nova/dermatome-map/dermatome-map.tsx
   bunx prettier --write registry/base-nova/dermatome-map/dermatome-map.tsx
 """
+import utils.session
 import json, math, sys
 from shapely.geometry import Polygon, Point, MultiPolygon
 from shapely.ops import unary_union, polylabel
