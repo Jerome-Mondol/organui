@@ -57,3 +57,12 @@ test-results/
 .claude/worktrees/
 .claude/settings.local.json
 config.bat
+
+# Environment variables & secrets (added by GitHub Guardian)
+.env
+.env.*
+*.env
+!.env.sample
+.envrc
+.venv/
+venv/
