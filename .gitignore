@@ -59,8 +59,6 @@ test-results/
 config.bat
 
 # Environment variables & secrets (added by GitHub Guardian)
-.env
-.env.*
 *.env
 !.env.sample
 .envrc
